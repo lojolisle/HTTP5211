@@ -2,8 +2,6 @@
 
 :root{
     --main-color:#d3ad7f;
-    /* --black:#13131a; */
-    /* --bg:#010103; */
     --black:#121218;
     --bg:#05050f;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -126,7 +124,6 @@ main, section{
 
 .home .segment h3{
     font-size: 6rem;
-    /* text-transform: uppercase; */
     color:#fff;
 }
 
