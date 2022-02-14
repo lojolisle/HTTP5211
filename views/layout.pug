@@ -1,0 +1,35 @@
+block variables 
+doctype html 
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width")
+    title #{title}
+    
+
+    link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+    link(rel="stylesheet", type="text/css", href="/css/styles.css")
+  body
+    header.header
+      a(href="#").logo
+        - var img = "../images/logo4.jpg"
+        img(src=img)
+        //-Citation:logo4 https://www.google.com/search?rlz=1C1CHBF_enCA973CA973&sxsrf=APq-WBvbCwvNjT2Jei65Uzy1F2e8KSkBLw:1644867920115&source=univ&tbm=isch&q=cozmo+cafe+logo&fir=9v9QuZ5tBDE9GM%252CQipO_rJgZ3TYwM%252C_%253BOy0kfMdjF4nOuM%252CJI4QFpcT9EdWzM%252C_%253BkgBwntItoPCRQM%252CEiGt9LsPVrJTaM%252C_%253B28JQmwVIoGYvdM%252CKrY0Re9aQ0ez7M%252C_%253BPPdYtdQo8mFDCM%252CXA1Z01Spe-UrkM%252C_%253ByUNpT5zbd6dKcM%252CwqBxQbozeslyGM%252C_%253B-TJy2nJTJybfnM%252CXA1Z01Spe-UrkM%252C_%253B8jxyj8d_fQ87wM%252CO1C0f6RAzCLmTM%252C_%253BdzMJUu83Q4vT3M%252CKWFS06bB_AAgcM%252C_%253BTYpmRq80dIrxcM%252CMib4TpsjAdJRmM%252C_&usg=AI4_-kRSP43IJZHc5XV98fqG2zpfKZGKrg&sa=X&ved=2ahUKEwj9ndLA-v_1AhUWFjQIHRTaA-0Q7Al6BAgCEGY&biw=1280&bih=905&dpr=1#imgrc=pw9_mv_YsOmWpM
+      nav.navbar
+        a(href="/") Home
+        a(href="/about") About
+        a(href="/menu") Menu
+      div.icons
+        div.fas.fa-search#search-btn
+        div.fas.fa-shopping-cart#cart-btn
+        div.fas.fa-bars#menu-btn
+
+  
+    block layout-content 
+    footer#footer
+      .share 
+        a(href="#").fab.fa-facebook-f
+        a(href="#").fab.fa-twitter
+        a(href="#").fab.fa-instagram
+      p.copyright &copy; Copyright @ CozmoCafe, 2022.
+    script(src="../js/script.js")   
